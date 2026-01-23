@@ -1,22 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MITS</title>
-        <style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaddam Nandini | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-            span{
-                margin: 10px;
-                padding: 10px;
-                border: 10px solid yellow;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>HEADING</h1>
-    <h2>HEADING</h2>
-    <h3>HEADING</h3>
-    <h4>HEADING</h4>
-    <h5>HEADING</h5>
-    <h6>HEADING</h6>
-    </body>
+  <header>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section id="home" class="section home">
+    <div class="hero">
+      <img src="2.jpg" alt="Gaddam Nandini Profile" class="profile-img" />
+      <h2>Hello, I'm <span>Gaddam Nandini</span></h2>
+      <p>Data Science Enthusiast | Python | Machine learning | SQL </p>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Data Science student with hands-on experience in python,machine learning, 
+      and data analysis. I have experience working on real-world datasets and building predictive models 
+      that solve practical business and healthcare problems.
+    </p>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Medical insurance cost Prediction</h3>
+        <p>
+          This project focuses on predicting medical insurance charges based on
+      demographic and lifestyle features using Machine Learning techniques.
+      and Developed a machine learning model to predict medical insurance charges
+      using features such as age, BMI, smoking status, number of children, and region.
+        </p>
+        <p>
+            <strong>model:</strong>Random forest regressor <br>
+        <strong>accuracy:</strong> R² Score ≈ 88%
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Nandini" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Gaddam Nandini. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

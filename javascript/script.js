@@ -180,9 +180,9 @@ console.log(m3);
 console.log(m4);
 console.log(m5);
 var {name,age,Dep,marks}={ 
-    name:"navya",
-    age:20,
-    Dep:"CSD"
+    name:"Ammulu",
+    age:19,
+    Dep:"CSD",
 }
 console.log(name);
 console.log(age);
