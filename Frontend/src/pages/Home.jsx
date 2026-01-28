@@ -1,16 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Home = ({name}) => {
+const Home = (props) => {
   const navigate = useNavigate();
   const handleClick=()=>{
-    navigate('/about')
+    navigate('/about');
   }
   return (
     <div>
-      <h1>Name : {name}</h1>
-      <button onClick={handleClick}>Go to about page</button>
-    </div>
+        <h1>Name: {props.name}</h1>
+        <button onClick={handleClick}>Go to about pages</button>
+        </div>
   )
 }
 
