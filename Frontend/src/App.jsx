@@ -13,6 +13,8 @@ import UseEffect from "./Hooks/UseEffect";
 import UseEffectApi from "./Hooks/UseEffectApi";
 import UseRef from "./Hooks/UseRef";
 import UseReducer from "./Hooks/UseReducer";
+import UseMemo from "./Hooks/UseMemo";
+import UseCallback from "./Hooks/UseCallback";
 const App = () => {
   return (
     <>
@@ -36,6 +38,8 @@ const App = () => {
           <Route path="useEffectApi" element={<UseEffectApi />} />
           <Route path="useRef" element={<UseRef />} />
           <Route path="useReducer" element={<UseReducer />} />
+          <Route path="useMemo" element={<UseMemo />} />
+          <Route path="useCallback" element={<UseCallback />} />
 
         </Route>
       </Routes>
